@@ -32,8 +32,8 @@ productRouter.post(
 				category,
 				stock,
 			} = req.body;
+			
 			const filename = req.file.filename;
-
 			const newProduct = await productService.addProduct({
 				name,
 				size,

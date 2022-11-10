@@ -87,6 +87,7 @@ categoryRouter.delete(
 			const deleteCategoryResult = await categoryService.deleteCategory(
 				categoryId,
 			);
+			console.log(deleteCategoryResult);
 
 			res.status(201).json(deleteCategoryResult);
 		} catch (err) {
